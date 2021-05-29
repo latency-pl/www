@@ -18,6 +18,7 @@ composer require geerlingguy/ping
     else {
     print 'Host could not be reached.';
     }
+
 # API for latency, based on PHP
 Check domains , test connection, screen,
 

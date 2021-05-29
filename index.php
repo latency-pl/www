@@ -87,6 +87,8 @@ try {
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+
 </head>
 <body>
 <div class="container box">
@@ -155,42 +157,5 @@ try {
     });
 </script>
 
-
-<style>
-    a.domain {
-        color: gray;
-        text-decoration: none;
-    }
-
-    a.domain.active {
-        color: #222333;
-        text-decoration: none;
-    }
-
-    img.img-thumbnail {
-        height: 300px;
-    }
-
-    iframe {
-        height: 300px;
-        width: 600px;
-    }
-
-    .box {
-        width: 100%;
-        max-width: 720px;
-        margin: 0 auto;
-    }
-
-    .center {
-        margin: auto;
-        max-width: 720px;
-    }
-
-    .center div {
-    }
-
-
-</style>
 </body>
 </html>
