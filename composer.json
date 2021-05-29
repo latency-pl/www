@@ -1,0 +1,6 @@
+{
+    "require": {
+        "jsmitty12/phpwhois": "dev-master",
+        "algo26-matthias/idna-convert": "^3.0"
+    }
+}

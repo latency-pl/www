@@ -1,6 +1,25 @@
-composer.phar
-/vendor/
+.plesk.txt
+.idea/
+.load_func/
 
+# Libraries
+#load_func.php
+
+# DOCS JSON data
+meta.json
+docs.json
+index.json
+
+# function DATA
+data.json
+nameserver_list.json
+domain_nameserver_list.json
+
+
+# PHP
+# composer.phar
+composer.lock
+/vendor/
 # Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
 # composer.lock
