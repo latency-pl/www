@@ -66,8 +66,6 @@ try {
             global $html;
 
             $html = implode("<br>", $domain_nameserver_list);
-//        var_dump($domain_nameserver_list);
-//        var_dump($screen_shot_image);
 
         });
     }
@@ -77,35 +75,6 @@ try {
     // Set HTTP response status code to: 500 - Internal Server Error
     $html = $e->getMessage();
 }
-
-
-function response_status($url)
-{
-    $headers = get_headers($url, 1);
-
-    if (is_array($headers)) {
-        return $headers[0];
-//        return substr($headers[0], 9);
-    }
-
-    return domain_exist($url);
-}
-
-
-function domain_exist($url)
-{
-    $domain = get_domain_by_url($url);
-
-//    if (checkdnsrr($domain , 'ANY')) {
-//    if (gethostbyname($domain) != $domain ) {
-    return gethostbynamel($domain);
-    if (gethostbynamel($domain) != $domain) {
-        return "DNS Record found";
-    } else {
-        return "NO DNS Record found";
-    }
-}
-
 
 ?>
 
@@ -179,9 +148,9 @@ function domain_exist($url)
             .done(function (result) {
                 console.log(result);
                 console.log(atext);
-                console.log(result.registered);
+                console.log(result.ping);
                 atext.addClass("active");
-                atext.html(result.registered);
+                atext.html(result.ping);
             });
     });
 </script>
