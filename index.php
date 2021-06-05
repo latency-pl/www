@@ -2,7 +2,7 @@
 // http://localhost:8080/index.php
 error_reporting(E_ERROR | E_PARSE);
 
-require("load_func.php");
+require("apifunc.php");
 $html = '';
 
 
@@ -15,7 +15,7 @@ try {
 
     if (isset($_POST["latency"])) {
 
-        load_func([
+        apifunc([
             'https://php.letjson.com/let_json.php',
             'https://php.defjson.com/def_json.php',
             'https://php.eachfunc.com/each_func.php',
